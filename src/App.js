@@ -6,16 +6,18 @@ import Profile from './components/Profile';
 import { use, useState } from 'react';
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
+import Users from './components/Users';
 
 function App() {
   //prop drilling
-  const [isLogin,setIsLogin] = useState(false)
+  /* const [isLogin,setIsLogin] = useState(false) */
   
   
   return (
    <>
     {/* <Profile /> */}
-    {(isLogin===true)?<Dashboard />:<Login isLogin={isLogin} setIsLogin={setIsLogin} />}
+    {/* {(isLogin===true)?<Dashboard />:<Login isLogin={isLogin} setIsLogin={setIsLogin} />} */}
+    <Users />
 
    </>
   );
